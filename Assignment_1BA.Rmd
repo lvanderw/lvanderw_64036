@@ -1,0 +1,58 @@
+---
+title: "Assignment 1"
+author: "Lukas van der Watt"
+date: "9/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+```{r}
+b <- 1947.01 #assigning a value to the letter/variable b
+class(b)#looking at the class of b
+
+```
+```{r}
+b_char<-as.character(b)#changing the class of b to a chracter
+class(b_char)
+```
+```{r}
+v <- c(1,'a',2,'b')#Creating a vector
+class(v)
+```
+```{r}
+DF<-data.frame(C1=c(1,4.37), C2=c("Red", "Blue"), C3=c(TRUE, FALSE))
+#creating a dataframe
+DF
+```
+```{r}
+c<-DF[,1]#Isolating C1
+c
+```
+```{r}
+print(DF$C1)#Another way of Isolating the C1 cloumn
+```
+```{r}
+DF_2 <-data.frame(V1=1:6, Countries=c('US', 'UK','UK',
+'India','China','India'))
+DF_2
+```
+```{r}
+table(DF_2$Countries)
+```
+```{r}
+x<-(-1)
+if (x>0){
+  y=14
+
+}else{
+ y=-19.7
+}
+print(x)
+print(y)
+
+```
+
